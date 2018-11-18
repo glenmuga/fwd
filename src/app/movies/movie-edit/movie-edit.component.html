@@ -1,3 +1,15 @@
-<p>
-  movie-edit works!
-</p>
+<div class="title is-4">
+  update movies
+</div>
+
+<div *ngIf="movie$ | async as movie">
+  <app-movie-form [movie]="movie"></app-movie-form><!--THIS IS A COMPONENT-->
+  
+  <br>
+  <button (click)="updateMovie(movie)" class="button is-info">
+    Update
+  </button>
+</div>
+  
+
+

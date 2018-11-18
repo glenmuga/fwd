@@ -1,3 +1,9 @@
-<p>
-  movie-create works!
-</p>
+<div class="title is-4">
+  create new movie
+</div>
+<app-movie-form [movie]="movie"></app-movie-form><!--THIS IS A COMPONENT-->
+
+<br>
+<button (click)="createMovie()" class="button is-info">
+  create
+</button>
