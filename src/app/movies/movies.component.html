@@ -6,3 +6,5 @@
     <button [routerLink]="['/movie/create']" class="button is-info">add new movie</button>
   </div>
 </div>
+
+<app-movie-card *ngFor="let movie of movies$ | async" [movie]="movie"></app-movie-card> <!---| async to read observable-->

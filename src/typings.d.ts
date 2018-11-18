@@ -7,5 +7,5 @@ declare interface Movie{
     duration: string;
     rating: string;
     year: string;
-    tumbnail: string;
+    thumbnail: string;
 }
