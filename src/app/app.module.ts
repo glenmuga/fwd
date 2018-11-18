@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieCreateComponent } from './movies/movie-create/movie-create.component';
+import { MovieEditComponent } from './movies/movie-edit/movie-edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesComponent,
+    MovieCreateComponent,
+    MovieEditComponent
   ],
   imports: [
     BrowserModule,
